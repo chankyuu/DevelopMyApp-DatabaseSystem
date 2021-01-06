@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportStuff" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5318efc-3483-4c28-895c-52b2b9ae61a7">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyAppDataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Stuff]]>
+	</queryString>
+	<field name="sId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="sId"/>
+		<property name="com.jaspersoft.studio.field.label" value="sId"/>
+	</field>
+	<field name="sName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="sName"/>
+		<property name="com.jaspersoft.studio.field.label" value="sName"/>
+	</field>
+	<field name="shelfLife" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="shelfLife"/>
+		<property name="com.jaspersoft.studio.field.label" value="shelfLife"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="20" width="162" height="50" uuid="0d21da0e-6daa-458f-9486-450cb5f8a81d"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stuff Data]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="30" uuid="44d247b2-f931-4fc9-a3a9-c8de9200d768">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f2375c29-7d7d-4069-9cd2-c88272eb7ce2"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[sId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="30" uuid="413b03ae-5f68-4424-ab2a-c709f5bc0782">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d849a066-0f64-47b5-b58d-3d09380b07dd"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[sName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" uuid="33bd32c9-7cc4-4f95-bdac-9cce7e129fb8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5ea9e1d-4097-47ad-aa32-d0b872d664d7"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[shelfLife]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" uuid="34ba01be-0db1-44b8-ae69-4ca5fa4a974a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f2375c29-7d7d-4069-9cd2-c88272eb7ce2"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" uuid="c6b95839-511f-4e61-9e91-903ed76600c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d849a066-0f64-47b5-b58d-3d09380b07dd"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="37d2d0c4-03c2-490a-8a3e-5f334233ec2c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5ea9e1d-4097-47ad-aa32-d0b872d664d7"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shelfLife}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
