@@ -1,10 +1,10 @@
 # DevelopMyApp-DatabaseSystem
 
 ## Explanation : 
-About my database : My database is about convenience stores. A total of 5 ta-bles were create through the design process (Branch, Buying, Contain, Customer, Stuff), and ### there are 2 scalar values functions, 17 table-valued functions, 15 stored procedures, and 6 triggers. I will explain in detail through the tasks below.
+About my database : My database is about convenience stores. A total of 5 tables were create through the design process (Branch, Buying, Contain, Customer, Stuff), and there are 2 scalar values functions, 17 table-valued functions, 15 stored procedures, and 6 triggers. I will explain in detail through the tasks below.
 This task is to develop my own database designed so far as an application.
-First, I do that establish a connection between your data base and Java Applica-tion using JDBC driver
-Second, I create an appropriate GUI using Java language. my GUI should facili-tate user to perform basic operations on database. 
+First, I do that establish a connection between your data base and Java Application using JDBC driver.
+Second, I create an appropriate GUI using Java language. my GUI should facilitate user to perform basic operations on database. 
 
 ## Conceptual Design
 ### <img src="https://user-images.githubusercontent.com/60462925/103891603-78fa9b80-512d-11eb-801b-df2fa021a4b1.png" width=500 height=300>
